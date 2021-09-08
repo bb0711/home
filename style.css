@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
+.korean{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.p_box{
+  font-size:1.0rem;
+  padding:12px 10px;
+  display:block;
+}
+.paper_title {
+    font-weight: bold;
+    color: #020b25;
+    font-size:1.1rem;
+}
+.paper_writer{
+  color: lightslategray;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.paper_academy{
+  color:grey;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+.paper_year {
+    font-size: 1.2rem;
+    color: lightslategray;
+    padding: 20px 0 25px 0px;
+    margin: 0px 10px;
+    border-top: 2px solid #7788993b;
+}
+.attaches {
+    display: inline-block;
+    color: white;
+    border-radius: 0.7rem;
+    font-size: 0.7rem; !important;
+    font-weight: normal; !important;
+    line-height: 1.3rem;
+    height: 1.3rem;
+    margin: 0 0 0 6px;
+}
+.attaches.pdf{
+  background-color: palevioletred;
+}
+.attaches.poster{
+  background-color: cornflowerblue;
+}
+.attaches.ppt{
+  background-color: rgb(74, 160, 74);
+}
+.attaches a{
+  text-decoration: none;
+  color:white;
+  padding: 0 5px;
+}
+.attaches a:hover{
+  text-decoration: none;
+  color:white;
+}
+.keywords{
+  font-weight: 500;
+}
+
+#project_part2 { font-size: 16px; 
+    
+  font-family: 'Courier Prime', monospace;
+  color: #004680;
+  background-color: white;
+  padding: 5px;
+  margin: 5px 0px;
+  display: inline-block;}
+  
+.in { text-indent: 30px; }
 
 .lw { font-size: 50px; 
     font-family: 'Courier Prime', monospace;
@@ -13,7 +94,7 @@
     padding: 5px 60px 10px;}
     
     .lv2 { font-size: 16px; 
-      font-weight: bold;
+    
     font-family: 'Courier Prime', monospace;
     background: #004680;
     color: white;
@@ -24,11 +105,12 @@
     .lv3{
       margin: 5px 5px 25px;
       line-height: 160%;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 400;
     }
     
-    .box { font-size: 15px; 
-    font-family: 'Open Sans', sans-serif;}
+    .box { font-size: 1.1rem; 
+    font-family: 'Barlow', sans-serif;}
     
     
     
