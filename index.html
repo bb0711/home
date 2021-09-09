@@ -23,7 +23,7 @@
         I want to help people to live better life by making the better products which people really wants. <br>
         I believe Data Science can do that so I am trying to learn it.<br>
         I'm interested in application of ML/AI with real data for actual usage.<br>
-        Especially, I was interested in <b>recommendation system, fairness of recommendation system, <a href='https://docs.google.com/presentation/d/1o3KC46dFLkVUrBGWNdDe2QrS0YofELQ0jj1wOvcDwsA/edit?usp=sharing' target="_blank">online bot</a> and hate speech.</b><br>
+        Especially, I was interested in <b>recommendation system, <a href='files/Fairness_summary.pdf' target="_blank">fairness of ML system</a>, <a href='https://docs.google.com/presentation/d/1o3KC46dFLkVUrBGWNdDe2QrS0YofELQ0jj1wOvcDwsA/edit?usp=sharing' target="_blank">online bot</a> and hate speech.</b><br>
         Now I'm working on <b>Building Korean Readability Index using AI.</b>
       </p>
 
@@ -85,8 +85,6 @@
         X-MoRe은 XAI 모델 중 하나인 LIME을 이용하여 추천된 영화당 배우, 감독, 태그, 장르, 개봉 시기의 5개 카테고리 항목에 대해 가장 강력한 6개의 추천 이유와 그 영향력을 보여준다. 유저는 이 추천 이유를 드래그를 통해 조절함으로써 추천 시스템에 피드백을 줄 수 있으며, 이는 실시간으로 추천 시스템에 반영된다.
         총 23명의 유저 스터디를 진행하여 평가한 결과, 다수가 X-MoRe가 보다 정확한 추천 시스템을 제공하며, 편리하게 개인화된 추천이 가능하도록하여 시스템에 대한 신뢰성이 증가한다고 답하였다.
         </div>
-        
-        
       </div>
     </div>
 
@@ -97,19 +95,20 @@
     <div class="lv3">
 
       <div class = p_box>
-        <div class= paper_title>How Can We Detect Toxicity for Korean?: Toxic Comments Classification for Korean Movie Comments</div>
+        <div class= paper_title>How Can We Detect Toxicity for Korean?: Toxic Comments Classification for Korean Movie Comments 
+          <div class= "attaches ppt">
+          <a href="files/hatespeech_위희주.pdf">ppt</a>
+        </div>
+        <div class= "attaches poster">
+          <a href="https://github.com/bb0711/korean_toxic_classifier">git</a>
+        </div></div>
             Implementing Korean toxic comments classifier using CNN. For the labeling, we used crowdsourcing by our small web with Naver movie review comments.
-            <div class= "attaches ppt">
-              <a href="files/hatespeech_위희주.pdf">ppt</a>
-            </div>
-            <div class= "attaches poster">
-              <a href="https://github.com/bb0711/korean_toxic_classifier">git</a>
-            </div>
+            
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Hate speech, Big Data, Crowdsourcing, Deep Learning, NLP</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> Google의 toxicity 판별기인 Perspective API가 한글은 지원하지 않고, (기존 연구에 따르면) 한글 악성 댓글과 영어 악성 댓글의 특징이 다르다는 점에서 시작한 연구이다.
-              네이버 영화 평가 데이터를 크롤링해서 사용하였으며, 데이터 라벨링은 crowdsourcing 방식으로 직접 firebase를 이용해 웹사이트를 구축하여 twitter에 배포하여 진행했다.
-              tokenizing은 음절 수준과 자음모음 수준의 두가지 방식으로 진행하여 비교하였다. word embedding으로는 Fasttext를, 예측 모델로는 pytorch를 활용해 textCNN모델을 이용하였다.
-              음절 수준의 tokenizing이 더 좋은 결과를 보였으며, 악성댓글과 그렇지 않은 댓글이 동등한 비율로 있는 test data에 대해 평가하였을 때, 81.3%의 정확도를 보였다.
+              네이버 영화 평가 데이터를 크롤링해서 사용하였으며, 데이터 라벨링은 crowdsourcing 방식으로 직접 firebase와 flask를 이용해 크라우드소싱-웹사이트를 구축하여 twitter에 배포하여 진행했다.
+              tokenizing은 음절 수준과 자음모음 수준의 두가지 방식으로 진행하여 비교하였다. word embedding으로는 Fasttext를, 예측 모델로는 pytorch를 이용해 구현한 textCNN 모델을 이용하였다.
+              음절 수준의 tokenizing이 더 좋은 결과를 보였으며, 악성댓글과 그렇지 않은 댓글이 1:1 비율로 있는 test data에 대해 평가하였을 때, 81.3%의 정확도를 보였다.
               또한 이 발표자료에서는 해당 모델의 개선해야할 점뿐만 아니라 한글 악성 댓글 판별기가 필요한 이유와 실제 적용가능한 사용법 그리고 이 모델 혹은 AI를 활용한 모델의 문제점 또한 제시한다.
               </div>
               <div class= paper_academy>Mar. 2019 ~ Jul. 2019</div>
@@ -118,14 +117,38 @@
       </div>
 
       <div class = p_box>
-        <div class= paper_title>NMOEA: Node Embedding and Multi-Objective Evolutionary Algorithms for Co-authorship Prediction</div>
-        Final Term Project for KAIST-AI506 (Data Mining and Search)
-            <div class= "attaches ppt">
+        <div class= paper_title>Reducing Bias and Guarantee of Fairness on Recommendation System Focusing on Measurement Methodology
+
+          <div class= "attaches ppt">
+            <a href="files/(2020-11-20)추천시스템편향보정연구.pdf">report</a>
+          </div>
+        </div>
+        <div class = "paper_contents korean">KISDI (정보통신정책연구원)와 건국대학교 산학협력단과 함께 진행한 '추천시스템의 편향 보정 및 공정성 보장 방안 연구 : 측정방법론을 중심으로' 연구.</div>
+            
+            <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Fairness in Recommnedation System,  Reducing Bias Disparity</div>
+            <div class = "paper_contents korean"> <b>summary&nbsp;</b> 추천 시스템에 요구되는 편향의 보정과 공정성 보장을 개념적, 실증적으로 고찰하고 알고리즘 편향을 보정하기 위한 pre-processing 방식의 4가지 데이터 변형 방식을 제안한다.
+              실제 플랫폼에서 사용하는 추천 알고리즘을 알 수 없기 때문에, 평가를 위해 User-KNN과 SVD알고리즘 각각을 사용하여 간단한 추천 시스템을 구현하였으며 가상으로 생성한 유저 행동기록 데이터와 실제 MovieLens 데이터를 이용하여 평가하였다. 
+              실험 결과 추천시스템을 통해 추천된 항목들이 기존 유저의 선호도보다 더 증폭된 정도로 추천된 항목이라는 것을 확인하였으며, 이를 통해 알고리즘으로 인해 편향이 발생할 수 있음을 확인했다. 
+              제안하는 편향성 보정 방법을 적용하면, 알고리즘 자체를 수정하지는 않기 때문에 적은 비용으로 보정을 할 수 있지만 모든 방식이 모든 알고리즘에 좋은 효과를 보이지는 않았다. 
+              본인은 이 연구에서 기존 추천시스템의 공정성 관련 선행 연구 조사, 편향성 보정 방법 제안 및 구현, 추천시스템 실험 설계 및 구현, 결과 분석 및 제안 등을 맡았다.
+              </div>
+              <div class= paper_academy>Jun. 2020 ~ Nov. 2020</div>
+
+
+      </div>
+
+      <div class = p_box>
+        <div class= paper_title>NMOEA: Node Embedding and Multi-Objective Evolutionary Algorithms for Co-authorship Prediction
+
+          <div class= "attaches ppt">
               <a href="files/ai506_report.pdf">ppt</a>
             </div>
             <div class= "attaches poster">
               <a href="https://github.com/bb0711/NMOEA">git</a>
             </div>
+        </div>
+        Final Term Project for KAIST-AI506 (Data Mining and Search)
+            
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Muti-Objective Evolutionary Algorithm, Node Embedding, Co-authorship Prediction</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> community detection과 co-authorship problem에 node embedding은 자주 쓰이나 MOEA(Multi-Objective Evolutionary Algorithm)과 결합해서는 잘 쓰이지 않아 해당 방법을 사용하여 Co-authorship prediction task를 해결하고자 하였다. 
               node2vec을 이용하여 node간의 homophily와 structural equivalence가 각각 내재된 두 개의 feature를 추출할 수 있을 것이라고 가정하였다.
@@ -140,11 +163,13 @@
 
 
       <div class = p_box>
-        <div class= paper_title>Analysis of Daejeon's Dangerous Area</div>
-        <div class = "paper_contents korean">[공모전] LH 한국토지주택공사에서 주관한 공모전, 3등상 수상.
+        <div class= paper_title>Analysis of Daejeon's Dangerous Area
           <div class= "attaches ppt">
             <a href="files/daejeon_traffic_ppt.pdf">ppt</a>
           </div>
+        </div>
+        <div class = "paper_contents korean">[공모전] LH 한국토지주택공사에서 주관한 공모전, 3등상 수상.
+          
         </div>
             
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Data Analysis, Big Data, Traffic Data</div>
@@ -165,11 +190,13 @@
       </div>
 
       <div class = p_box>
-        <div class= paper_title>Implementation of KLUE Dependcy Parser API</div>
+        <div class= paper_title>Implementation of KLUE Dependcy Parser API
+          <div class= "attaches poster">
+            <a href="https://github.com/bb0711/run_klue_dp">git</a>
+          </div>
+        </div>
             Implemented Dependency Parser for Korean using KLUE and made it easily for anyone to use.
-            <div class= "attaches poster">
-              <a href="https://github.com/bb0711/run_klue_dp">git</a>
-            </div>
+            
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Dependency Parser API</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> 최근 공개된 <a href='https://github.com/KLUE-benchmark/KLUE'>KLUE</a> (Korean Language Understanding Evaluation)에서 의존 문법 파서(Dependency Parser)를 위한 데이터셋과 모델을 공개하였다.
               코드 또한 공개되어 있으나, competition을 위해 코드를 공개하였기 때문에 실행을 위한 설명이 없으며, 두 코드를 합쳐서 모델을 학습 후 사용하여야 한다.
@@ -185,14 +212,40 @@
         </div>
 
       <div class = p_box>
-        <div class= paper_title>Analysis of External Environmental Factors Affecting Venture Business Stability through Social Data Analysis: Based on the Food Service Franchises</div>
+        <div class= "paper_title korean">대한민국 유통 활성화를 위한 적요 표준화 
+          <div class= "attaches ppt">
+            <a href="files/수비드데이터_final.pdf">ppt</a>
+          </div>
+        </div>
+            <div class = "paper_contents korean">더존비즈온 주최 2020 빅데이터 경진대회 2등상 수상 </div>
+            
+            <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Data Mining, Social Data, Data-driven</div>
+            <div class = "paper_contents korean"> <b>summary&nbsp;</b> 적요(물품 흐름을 파악할 수 있도록 회계 기록을 작성한 데이터) 데이터는 수기로 작성하는 경우가 많아, 작성자의 주관적 판단에 따라 작성되어 표준화가 어렵다는 문제점을 해결하기 위한 프로젝트였다. 
+              따라서 물품 분류 목록을 만들어 기존 적요 데이터를 맵핑하도록 설계하였으며, 주어진 데이터로 자체 제작한 딕셔너리 사용, 외부 DB사용 그리고 google search와 word2vec을 사용하는 총 3단계의 맵핑 프로세스를 제안하였다.
+              물품 분류 목록은 따로 주어지지 않아 조달청의 상품정보시스템에 몇 가지 항목을 추가로 더해 사용하였다.  
+              데이터 가공은 konlpy를 이용한 명사 분해와 불용어 제거를 통해 진행되었으며, 이후 표지 단어를 추출하여 해당 표지 단어를 포함하는 경우 우선 분류되도록 하였다.
+              이후 조달청 상품정보 시스템에 직접 검색해 나오는 품목은 해당 분류로 분류한다.
+              직접 python으로 제작한 google 검색을 하여 첫 페이지의 모든 단어를 크롤링해 날짜/url/지명/조사를 제외한 최다 빈도 단어 두 개를 추출하였고, 이 단어와 물품 분류 항목 간의 word2vec을 이용해 cosine similarity가 높은 항목으로 라벨링하였다. 
+              이는 빅데이터 기반으로 구현되어 주관적인 판단을 배제할 수 있는 장점이 있다.
+              본인은 전반적인 알고리즘 설계 및 모든 알고리즘 구현을 맡았다.
+
+            <div class= paper_academy>Jun. 2019 ~ Nov. 2019</div>
+            
+        </div>
+      </div>
+
+      <div class = p_box>
+        <div class= paper_title>Analysis of External Environmental Factors Affecting Venture Business Stability through Social Data Analysis: Based on the Food Service Franchises
+          <div class= "attaches ppt">
+            <a href="files/[최종발표]위희주_소셜 데이터 분석을 통한 벤처기업의 안정성에 영향을 미치는 외부환경요인 분석.pdf">ppt</a>
+          </div>
+          <div class= "attaches pdf">
+            <a href="files/2019_벤처연구_위희주.pdf">paper</a>
+          </div>
+        </div>
             Analyzing twitter text data to figure out the factors which are related to the sustatinable success of the food franchise companies.
-            <div class= "attaches ppt">
-              <a href="files/[최종발표]위희주_소셜 데이터 분석을 통한 벤처기업의 안정성에 영향을 미치는 외부환경요인 분석.pdf">ppt</a>
-            </div>
-            <div class= "attaches pdf">
-              <a href="files/2019_벤처연구_위희주.pdf">paper</a>
-            </div>
+            
+            
             
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Data Analysis, Social Data, Sequential Data, NLP</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> 과연 망하는 음식점과 그렇지 않은 음식점을 SNS 데이터를 보고 예측할 수 있을까? 에서 시작한 연구이다.
@@ -215,15 +268,17 @@
       </div>
 
       <div class = p_box>
-        <div class= paper_title>ALBAKA: Weekly Scheduling System for Part-timers</div>
+        <div class= paper_title>ALBAKA: Weekly Scheduling System for Part-timers
+          <div class= "attaches ppt">
+            <a href="https://youtu.be/GjgfWao66Ys">video</a>
+          </div>
+          <div class= "attaches poster">
+            <a href="https://github.com/sooj-j/albaka">git</a>
+          </div>
+        </div>
             It is the term project of HCI(Human Computer Interaction) class in KAIST and we got 'Best Implementation Award' from the Prof. juho Kim.
           
-            <div class= "attaches ppt">
-              <a href="https://youtu.be/GjgfWao66Ys">video</a>
-            </div>
-            <div class= "attaches poster">
-              <a href="https://github.com/sooj-j/albaka">git</a>
-            </div>
+            
             
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> HCI (Human Computer Interaction)</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> 유저를 위한 시스템에 대해 공부하는 HCI 수업의 term project로 진행하였다. 일부 대형 프랜차이즈 알바는 매주 시간표를 손으로 짜며, 알바생 간의 시간대 교환 및 대화 전달이 어렵다는 유저의 니즈에서 착안하여 시작하였다. 
@@ -237,18 +292,44 @@
       </div>
 
       <div class = p_box>
-        <div class= paper_title>MiniCS: Critical Section Minimisation in Concurrent Programming</div>
+        <div class= paper_title>Better Image De-occlusion using Image Search
+          <div class= "attaches pdf">
+            <a href="files/CS570_Deocclusion.pdf">paper</a>
+          </div>
+          <div class= "attaches ppt">
+            <a href="files/cs570ppt.pdf">ppt</a>
+          </div>
+        </div>
+            
+            <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> Scene De-occlusion, Amodal Mask, Content Generation</div>
+            <div class = "paper_contents korean"> <b>summary&nbsp;</b> 여러 물체가 있는 이미지가 있을 때, 일부 가려진 부분이 있더라도 각 물체별 이미지를 복귀하는 것을 Image De-occlusion 이라고 한다. 
+              이 프로젝트는 'Self-Supervised Scene De-occlusion(CVPR 2020)'의 논문을 replicate하고 google image search를 결합하여 모델을 개선하고자 하였다. 
+              논문의 모델은 가려진 mask를 복귀시키는 PCNet-M과 마스크 내부의 색을 채우는 PCNet-C로 구성된다.
+              google Image search로 가져온 유사한 이미지들에서 SIFT (Scale-Invariant Feature Transform) feature를 추출하고 이중 knn 을 이용해 occluded image와 유사한 이미지 집단을 찾는다. 기존 PCNet-C에 reference image를 추가한 새로운 convolutional model을 구현했다.
+              데이터는 기존 논문에서 사용한 COCOA dataset을 이용하여 평가하였다.
+              본인은 이 프로젝트에서 논문 replicate 부분, 모델 평가, 전반적인 알고리즘 설계를 맡았다.
+            </div>
+
+            <div class= paper_academy>Mar. 2020 ~ Jul. 2020</div>
+            
+            
+      </div>
+
+      <div class = p_box>
+        <div class= paper_title>MiniCS: Critical Section Minimisation in Concurrent Programming
+          <div class= "attaches pdf">
+            <a href="files/MiniCS_report.pdf">paper</a>
+          </div>
+          <div class= "attaches ppt">
+            <a href="https://docs.google.com/presentation/d/1tDEl-Vi_QWYiuUN1uQit4kwQI2XChnlzreQjt5BmeJg/edit?usp=sharing">ppt</a>
+          </div>
+          <div class= "attaches poster">
+            <a href="https://github.com/hyunsukimsokcho/miniCS">git</a>
+          </div>
+        </div>
             Using the genetic algorithm, we tried to implement the program which automatically prevents race conditions in concurrent programming.
             
-            <div class= "attaches pdf">
-              <a href="files/MiniCS_report.pdf">paper</a>
-            </div>
-            <div class= "attaches ppt">
-              <a href="https://docs.google.com/presentation/d/1tDEl-Vi_QWYiuUN1uQit4kwQI2XChnlzreQjt5BmeJg/edit?usp=sharing">ppt</a>
-            </div>
-            <div class= "attaches poster">
-              <a href="https://github.com/hyunsukimsokcho/miniCS">git</a>
-            </div>
+            
             
             <div class = "paper_contents korean keywords"> <b>keywords&nbsp;</b> AI Based Software Engineering, Genetic Algorithm, Concurrent Programming</div>
             <div class = "paper_contents korean"> <b>summary&nbsp;</b> Multi-thread 프로그래밍의 경우, 2개 이상의 thread가 같은 data에 접근할 경우 발생하는 data race problem이 자주 발생한다. 
@@ -277,7 +358,7 @@
     Experiences
   </div>
   <div class="lv3">
-    <b>Teaching Assistant</b> in CS101 (Introduction to Programming) and CS206 (Data Structure) of KAIST. (for 4 semeters, Mar. 2020 ~ Feb. 2022)<br/>
+    <b>Teaching Assistant</b> in CS101 (Introduction to Programming), CS206 (Data Structure) and CS564 (Big Data Analytics Using R) of KAIST. (for 4 semeters, Mar. 2020 ~ Feb. 2022)<br/>
     <b>Research Intern</b> in <a href="http://cds.kaist.ac.kr/cdsn/"  >CDSN Lab</a>, KAIST. (Sep. 2019 ~ Dec. 2019)<br/>
     - Researched on smart home environment especially on user-data association problem.<br/>
     <b>Data Scientist Intern </b> in <a href="http://company.netmarble.com">Netmarble</a>, Seoul. (Jun. 2019 ~ Aug. 2019)<br>
